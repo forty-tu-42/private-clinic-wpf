@@ -1,0 +1,12 @@
+<Window x:Class="ClinicApp.LoginWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="Вход — Частная поликлиника" Width="430" Height="430" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Background="#F1F5F9">
+  <Border Background="White" CornerRadius="12" Margin="32" Padding="28">
+    <StackPanel>
+      <TextBlock Text="ЧАСТНАЯ ПОЛИКЛИНИКА" Foreground="#0F4C81" FontSize="22" FontWeight="Bold" TextAlignment="Center"/>
+      <TextBlock Text="Вход в медицинскую информационную систему" Margin="0,8,0,24" Foreground="#64748B" TextAlignment="Center" TextWrapping="Wrap"/>
+      <TextBlock Text="Логин"/><TextBox x:Name="LoginBox" Text="admin"/>
+      <TextBlock Text="Пароль" Margin="0,8,0,0"/><PasswordBox x:Name="PasswordBox" Password="admin"/>
+      <Button Content="ВОЙТИ" Height="44" Margin="4,20,4,8" Background="#0F4C81" Foreground="White" FontWeight="Bold" Click="Login_Click"/>
+      <TextBlock Text="Демо: admin/admin, director/director, doctor/doctor" Foreground="#64748B" TextAlignment="Center" TextWrapping="Wrap"/>
+    </StackPanel>
+  </Border>
+</Window>
